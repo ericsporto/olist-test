@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=PT+Sans:wght@400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+}
+h2 {
+  font-family: 'PT Sans', sans-serif;
+}
+
+@import './variables';
+@import './header';
+@import './section1';
+@import './section2';
+@import './section3';
+@import './section4';
+@import './section5';
+@import './section6';
+@import './section7';
+@import './footer';
+@import './toogleBar'

@@ -1,0 +1,121 @@
+.section-5 {
+  h2 {
+    color: $dark-hover;
+
+    @media (max-width: 1000px) {
+      padding-left: 0px;
+      text-align: center;
+    }
+    @media (min-width: 1000px) {
+      padding-left: 100px;
+      text-align: left;
+    }
+  }
+  div {
+    display: flex;
+    justify-content: center;
+    ul {
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+      li {
+        list-style-type: none;
+        overflow: hidden;
+        height: 460px;
+        -webkit-box-shadow: 0px 0px 15px -8px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 15px -8px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 15px -8px rgba(0, 0, 0, 0.75);
+        border-radius: 10px;
+        img {
+          width: 200px;
+        }
+        form {
+          width: 100%;
+          margin: 0 auto;
+          text-align: center;
+        }
+
+        .value-button {
+          display: inline-block;
+          border: 1px solid #ddd;
+          margin: 0px;
+          width: 35px;
+          height: 20px;
+          text-align: center;
+          vertical-align: middle;
+          padding: 11px 0;
+          background: #eee;
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          &:hover {
+            background-color: #c0bfbf;
+          }
+        }
+
+        .value-button:hover {
+          cursor: pointer;
+        }
+
+        form #decrease {
+          margin-right: -4px;
+          border-radius: 8px 0 0 8px;
+        }
+
+        form #increase {
+          margin-left: -4px;
+          border-radius: 0 8px 8px 0;
+        }
+
+        form #input-wrap {
+          margin: 0px;
+          padding: 0px;
+        }
+
+        input#number1,
+        #number2,
+        #number3,
+        #number4,
+        #number5 {
+          text-align: center;
+          border: none;
+          border-top: 1px solid #ddd;
+          border-bottom: 1px solid #ddd;
+          margin: 0px;
+          width: 30px;
+          height: 40px;
+        }
+
+        input[type='number']::-webkit-inner-spin-button,
+        input[type='number']::-webkit-outer-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+        button {
+          background-color: #66c925;
+          border: none;
+          color: $basic;
+          font-weight: 600;
+          padding: 10px;
+          border-radius: 20px;
+          cursor: pointer;
+          &:hover {
+            background-color: #006100;
+          }
+        }
+      }
+
+      @media (max-width: 1000px) {
+        width: 100%;
+      }
+      @media (min-width: 1000px) {
+        width: 80%;
+      }
+    }
+  }
+}

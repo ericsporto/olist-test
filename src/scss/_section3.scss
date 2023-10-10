@@ -1,0 +1,44 @@
+.section-3 {
+  h2 {
+    color: $dark-hover;
+
+    @media (max-width: 1000px) {
+      padding-left: 0px;
+      text-align: center;
+    }
+    @media (min-width: 1000px) {
+      padding-left: 100px;
+      text-align: left;
+    }
+  }
+  div {
+    display: flex;
+    justify-content: center;
+    ul {
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      li {
+        list-style-type: none;
+        img {
+          border-radius: 10px;
+          width: 200px;
+          cursor: pointer;
+          &:hover{
+            transition: all ease-in-out 0.3s;
+            opacity: 0.8;
+          }
+        }
+      }
+
+      @media (max-width: 1000px) {
+        width: 100%;
+      }
+      @media (min-width: 1000px) {
+        width: 80%;
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@mixin buttonLayout($bg-color,$color, $hover-bg-color, $hover-color) {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  padding: 5px 20px;
+  align-items: center;
+  background-color: $bg-color;
+  color: $color;
+  border: none;
+  font-family: "Playfair Display", sans-serif;
+  font-size: medium;
+  font-weight: 600;
+  &:hover{
+    background-color: $hover-bg-color ;
+    color: $hover-color;
+  }
+}

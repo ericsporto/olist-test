@@ -1,0 +1,123 @@
+.section-6 {
+  display: flex;
+  background-color: $basic;
+  margin: 30px 0;
+  width: 100%;
+  height: 335px;
+  .left-aside {
+    height: 335px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondary-bg;
+    h1 {
+      color: white;
+      font-weight: 500;
+
+      @media (max-width: 1000px) {
+        font-size: 24px;
+        text-align: center;
+        padding: 0;
+      }
+      @media (min-width: 1000px) {
+        font-size: 36px;
+        padding-left: 30px;
+        text-align: left;
+      }
+    }
+    .card-box {
+      width: 85%;
+      justify-content: center;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      padding-bottom: 50px;
+      p {
+        color: $dark-hover;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 1000px) {
+      width: 100%;
+    }
+    @media (min-width: 1000px) {
+      width: 50%;
+    }
+  }
+  .right-aside {
+    display: flex;
+    height: 335px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 50%;
+    background-color: $button-bg;
+    h2 {
+      color: white;
+      font-weight: 500;
+
+      @media (max-width: 1000px) {
+        font-size: 16px;
+        text-align: center;
+        padding: 0;
+      }
+      @media (min-width: 1000px) {
+        font-size: 36px;
+        padding: 0 50px;
+        text-align: left;
+      }
+    }
+    .email-box {
+      width: 60%;
+      justify-content: center;
+      display: flex;
+      gap: 10px;
+      input {
+        border: none;
+        border-radius: 10px;
+        padding-left: 5px;
+        color: $dark;
+        outline: none;
+        height: 25px;
+        width: 100%;
+      }
+      button {
+        background-color: $button-hover;
+        border: none;
+        border-radius: 20px;
+        color: $basic;
+        font-weight: 700;
+        cursor: pointer;
+        transition: all ease-in-out 0.3s;
+        &:hover {
+          background-color: $basic;
+          color: $button-hover;
+        }
+      }
+
+      @media (max-width: 1000px) {
+        padding: 20px 0;
+      }
+      @media (min-width: 1000px) {
+        padding: 5px 15px;
+      }
+    }
+
+    @media (max-width: 1000px) {
+      width: 100%;
+    }
+    @media (min-width: 1000px) {
+      width: 50%;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
+  @media (min-width: 1000px) {
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,211 @@
+.section-2 {
+  display: flex;
+  background-color: $basic;
+
+  @media (max-width: 1100px) {
+    flex-direction: column;
+  }
+  @media (min-width: 1100px) {
+    flex-direction: row;
+  }
+}
+
+.left-aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  background-color: $secondary-bg;
+  h1 {
+    font-size: 36px;
+    color: white;
+    font-weight: 500;
+    padding-left: 30px;
+  }
+  .card-box {
+    width: 85%;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    .card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid $basic;
+      border-radius: 10px;
+      width: 6rem;
+      color: $basic;
+      font-weight: 700;
+      &:hover {
+        background-color: $button-hover;
+        border: 1px solid $button-hover;
+        -webkit-transform: rotateZ(-10deg);
+        -ms-transform: rotateZ(-10deg);
+        transform: rotateZ(-10deg);
+        transition: all ease-in-out 0.2s;
+      }
+    }
+  }
+
+  @media (max-width: 1100px) {
+    width: 100%;
+  }
+  @media (min-width: 1100px) {
+    width: 40%;
+  }
+}
+
+.right-aside {
+  background-color: $primary-bg;
+  .card-box {
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    .card-1 {
+      display: flex;
+      margin-top: 20px;
+      background-color: $button-hover;
+      flex-direction: column;
+      height: 18rem;
+      width: 15rem;
+      justify-content: space-between;
+      overflow: hidden;
+      align-items: center;
+      border: 2px solid $card-bg;
+      border-radius: 10px;
+      img {
+        width: 100%;
+        height: 65%;
+      }
+
+      @media (min-width: 1100px) {
+        animation: moove-1 6s infinite alternate;
+        margin-top: 0px;
+      }
+    }
+    .card-2 {
+      display: flex;
+      background-color: $button-hover;
+      flex-direction: column;
+      margin-top: 20px;
+      height: 18rem;
+      width: 15rem;
+      justify-content: space-between;
+      overflow: hidden;
+      align-items: center;
+      border: 3px solid $card-bg;
+      border-radius: 10px;
+      img {
+        width: 100%;
+        height: 65%;
+      }
+
+      @media (min-width: 1100px) {
+        animation: moove-2 10s infinite alternate;
+        margin-top: -30px;
+      }
+    }
+    .card-3 {
+      display: flex;
+      background-color: $button-hover;
+      flex-direction: column;
+      margin-top: 20px;
+      height: 18rem;
+      width: 15rem;
+      justify-content: space-between;
+      overflow: hidden;
+      align-items: center;
+      border: 3px solid $card-bg;
+      border-radius: 10px;
+      img {
+        width: 100%;
+        height: 65%;
+      }
+
+      @media (min-width: 1100px) {
+        animation: moove-3 4s infinite alternate;
+        margin-top: -15px;
+      }
+    }
+  }
+
+  @media (max-width: 1100px) {
+    width: 100%;
+  }
+  @media (min-width: 1100px) {
+    width: 60%;
+  }
+}
+
+.div-smooth {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $card-bg;
+  color: $basic;
+  font-weight: 500;
+  font-size: 12px;
+  -webkit-box-shadow: 0px 27px 14px 66px rgba(0, 71, 214, 1);
+  -moz-box-shadow: 0px 27px 14px 66px rgba(0, 71, 214, 1);
+  box-shadow: 0px 27px 14px 66px rgba(0, 71, 214, 1);
+  a{
+    text-decoration: none;
+    color: $dark-hover
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  padding: 5px 10px;
+  margin-bottom: 30px;
+  align-items: center;
+  background-color: $primary-bg;
+  color: $button-hover;
+  border: 1px solid $button-hover;
+  border-radius: 10px;
+  font-family: 'PT Sans', sans-serif;
+  font-size: medium;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+  &:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+@keyframes moove-1 {
+  from {
+    transform: translateY(10px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes moove-2 {
+  from {
+    transform: translateY(30px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes moove-3 {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
